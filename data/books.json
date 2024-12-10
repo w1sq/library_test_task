@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "a",
+    "author": "a",
+    "year": 1,
+    "status": "в наличии"
+  },
+  {
+    "id": 2,
+    "title": "b",
+    "author": "b",
+    "year": 5,
+    "status": "в наличии"
+  }
+]

@@ -1,0 +1,16 @@
+services:
+  library:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: library-app
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+    working_dir: /app/src
+    stdin_open: true
+    tty: true
+  tests:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.test
