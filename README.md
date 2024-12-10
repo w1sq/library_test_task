@@ -20,43 +20,60 @@ A simple console-based library management system written in Python that allows y
 ## Installation
 
 1. Clone the repository:
-   git clone <https://github.com/w1sq/library-test-task.git>
-   cd library-test-task
+
+    ```bash
+    git clone https://github.com/w1sq/library_test_task.git
+    cd library_test_task
+    ```
 
 2. Using Docker (recommended):
-   docker-compose build
-   docker-compose run --rm library
+
+    ```bash
+    docker-compose build
+    docker-compose run --rm library
+    ```
 
 3. Without Docker:
-   cd src
-   python3 main.py
+
+    ```bash
+    cd src
+    python3 main.py
+    ```
 
 ## Running Tests
 
 With Docker:
+
+```bash
 docker-compose run --rm tests
+```
 
 Without Docker:
+
+```bash
 cd src
 python -m unittest tests/test_library.py
+```
 
 ## Project Structure
 
+```
 .
 ├── docker/
-│ ├── Dockerfile
-│ └── Dockerfile.test
+│   ├── Dockerfile
+│   └── Dockerfile.test
 ├── src/
-│ ├── models/
-│ │ ├── book.py
-│ │ └── library.py
-│ ├── tests/
-│ │ └── test_library.py
-│ └── main.py
+│   ├── models/
+│   │   ├── book.py
+│   │   └── library.py
+│   ├── tests/
+│   │   └── test_library.py
+│   └── main.py
 ├── data/
-│ └── books.json
+│   └── books.json
 ├── docker-compose.yml
 └── README.md
+```
 
 ## Usage
 
